@@ -1,0 +1,2 @@
+java -jar ../../tools/antlr/antlr-4.9-complete.jar -Dlanguage=CSharp "./Engine/Grammar/ExpressionLexer.g4" -o "./Engine/Generated" -package OptionExpressions.Engine.Generated
+java -jar ../../tools/antlr/antlr-4.9-complete.jar -Dlanguage=CSharp "./Engine/Grammar/ExpressionParser.g4" -o "./Engine/Generated" -package OptionExpressions.Engine.Generated -visitor -no-listener

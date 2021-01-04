@@ -348,3 +348,12 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/tools/antlr/antlr-4.9-complete.jar
+/src/OptionExpressions/Engine/Generated/ExpressionParserVisitor.cs
+/src/OptionExpressions/Engine/Generated/ExpressionParserBaseVisitor.cs
+/src/OptionExpressions/Engine/Generated/ExpressionParser.tokens
+/src/OptionExpressions/Engine/Generated/ExpressionParser.interp
+/src/OptionExpressions/Engine/Generated/ExpressionParser.cs
+/src/OptionExpressions/Engine/Generated/ExpressionLexer.tokens
+/src/OptionExpressions/Engine/Generated/ExpressionLexer.interp
+/src/OptionExpressions/Engine/Generated/ExpressionLexer.cs
