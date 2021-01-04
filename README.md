@@ -46,7 +46,7 @@ public class MyService
 ```json
 {
     "AppName": "[concat(assemblyName, ' - ', assemblyVersion)]",
-    "Enabled": [myCustomFunction()]"
+    "Enabled": "[myCustomFunction()]"
 }
 ```
 
