@@ -117,6 +117,8 @@ When you use `UseOptionExpressions` in your host builder, these variables and fu
 ## Compiling
 This library uses ANTLR to automatically generate parser code. Since ANTLR is a Java tool, you'll need Java installed to build the solution. Please note that Java is NOT required to use this library. It's required only if you want to compile it.
 
+You'll need to download ANTLR too. [Please read this file for more information](https://github.com/msaville8/OptionExpressions/tree/main/tools/antlr).
+
 ## Future Development
 There are plans to add support for these features in the near future:
 * Binary expressions (boolean and arithmetic)
