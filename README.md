@@ -1,4 +1,4 @@
-# Option Expressions for .NET
+# Option Expressions for .NET Core
 
 Enable functions and variables in your app's configuration with Option Expressions. This library is intended for apps that use dependency injection and [Microsoft.Extensions.Options](https://docs.microsoft.com/en-us/dotnet/core/extensions/options).
 
