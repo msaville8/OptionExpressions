@@ -114,6 +114,9 @@ When you use `UseOptionExpressions` in your host builder, these variables and fu
 | assemblyName | The name of the entry assembly. |
 | assemblyVersion | The version of the entry assembly. |
 
+## Compiling
+This library uses ANTLR to automatically generate parser code. Since ANTLR is a Java tool, you'll need Java installed to build the solution. Please note that Java is NOT required to use this library. It's required only if you want to compile it.
+
 ## Future Development
 There are plans to add support for these features in the near future:
 * Binary expressions (boolean and arithmetic)
