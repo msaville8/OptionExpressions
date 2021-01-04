@@ -53,10 +53,11 @@ public class MyService
 #### Commandline
 `app.exe --AppName=[concat(assemblyName, ' - ', assemblyVersion)] --Enabled=[myCustomFunction()]`
 
-## Data Types
-| Type | Example |
-| ---- | ------- |
-| String | `[concat('Hello', ', ', 'World!')]`
+## Literals
+Option Expressions support **string**, **integer**, and **boolean** literals.
+```
+[concat('This is a string!', 42, true)]
+```
 
 ## Customization
 ```csharp
