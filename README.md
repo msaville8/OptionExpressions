@@ -37,7 +37,7 @@ public class MyService
 {
     public MyService(IOptions<MyServiceOptions> options)
     {
-        string appName = options.Value.ApppName;
+        string appName = options.Value.AppName;
     }
 }
 ```
