@@ -11,6 +11,8 @@
     <Copyright>Copyright (c) 2021 Matt Saville</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Enable functions and variables in your app's configuration with Option Expressions.</Description>
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

@@ -8,6 +8,12 @@ Enable functions and variables in your app's configuration with Option Expressio
 * Integration with `IOptions`, `IOptionsSnapshot` and `IOptionsMonitor`.
 * Works with any configuration provider including JSON, commandline, etc.
 
+## NuGet Package
+[View package details on NuGet](https://www.nuget.org/packages/OptionExpressions/)
+```
+Install-Package OptionExpressions -Version 1.0.0
+```
+
 ## Quick Start
 To enable Option Expressions, add `UseOptionExpressions()` to your host builder code.
 ```csharp
