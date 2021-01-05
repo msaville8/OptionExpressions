@@ -42,7 +42,7 @@ namespace OptionExpressions.Engine
                 _ => throw new NotSupportedException()
             };
 
-            return result.ToString();
+            return result;
         }
 
         private string ExecuteFunction(FunctionCall functionCall)
