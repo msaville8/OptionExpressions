@@ -36,7 +36,7 @@ namespace OptionExpressions
         private static void AddDefaultFunctions(ExpressionOptions options)
         {
             options.RegisterFunction("concat", args => string.Concat(args));
-            options.RegisterFunction("strlen", args => args.First().Length);
+            options.RegisterFunction("strlen", args => args.Single().Length);
         }
     }
 }
