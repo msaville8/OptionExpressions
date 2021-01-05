@@ -64,7 +64,7 @@ namespace OptionExpressions.Engine
                 }
             }
 
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
 
         public override ExpressionSyntaxNode VisitBooleanLiteral([NotNull] ExpressionParser.BooleanLiteralContext context)
@@ -147,7 +147,7 @@ namespace OptionExpressions.Engine
             }
             else
             {
-                throw new NotImplementedException();
+                throw new NotSupportedException();
             }
 
             return op;
@@ -175,7 +175,7 @@ namespace OptionExpressions.Engine
             }
             else
             {
-                throw new NotImplementedException();
+                throw new NotSupportedException();
             }
 
             return op;
