@@ -41,7 +41,8 @@ namespace OptionExpressions.Engine
                 {
                     return VisitExpression(expressions[0]);
                 }
-                else if (expressions.Length > 1 && context.op() is not null and var binaryOp)
+
+                if (expressions.Length > 1 && context.op() is not null and var binaryOp)
                 {
                     if (binaryOp.booleanOp() is not null and var booleanOp)
                     {
@@ -52,7 +53,8 @@ namespace OptionExpressions.Engine
                             Operator = ParseBooleanOperator(booleanOp)
                         };
                     }
-                    else if (binaryOp.arithmeticOp() is not null and var arithmeticOp)
+
+                    if (binaryOp.arithmeticOp() is not null and var arithmeticOp)
                     {
                         return new ArithmeticExpression
                         {
@@ -64,7 +66,7 @@ namespace OptionExpressions.Engine
                 }
             }
 
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
 
         public override ExpressionSyntaxNode VisitBooleanLiteral([NotNull] ExpressionParser.BooleanLiteralContext context)
@@ -147,7 +149,7 @@ namespace OptionExpressions.Engine
             }
             else
             {
-                throw new NotImplementedException();
+                throw new NotSupportedException();
             }
 
             return op;
@@ -175,7 +177,7 @@ namespace OptionExpressions.Engine
             }
             else
             {
-                throw new NotImplementedException();
+                throw new NotSupportedException();
             }
 
             return op;

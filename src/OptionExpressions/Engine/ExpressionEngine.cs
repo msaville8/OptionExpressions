@@ -39,10 +39,10 @@ namespace OptionExpressions.Engine
                 IntegerLiteral integerLiteral => integerLiteral.Value.ToString(CultureInfo.InvariantCulture),
                 BooleanLiteral booleanLiteral => booleanLiteral.Value.ToString(),
                 // TODO: BooleanExpression and ArithmeticExpression
-                _ => throw new NotImplementedException()
+                _ => throw new NotSupportedException()
             };
 
-            return result.ToString();
+            return result;
         }
 
         private string ExecuteFunction(FunctionCall functionCall)
@@ -54,7 +54,7 @@ namespace OptionExpressions.Engine
 
             if (!this.options.Functions.TryGetValue(functionCall.FunctionName, out var callback))
             {
-                throw new NotImplementedException($"Function '{functionCall.FunctionName}' is undefined.");
+                throw new NotSupportedException($"Function '{functionCall.FunctionName}' is undefined.");
             }
 
             var evaluatedArgs = functionCall.Arguments.Expressions.Select(Execute);
