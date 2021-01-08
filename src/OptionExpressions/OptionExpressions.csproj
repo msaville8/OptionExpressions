@@ -15,6 +15,7 @@
     <Description>Enable functions and variables in your app's configuration with Option Expressions. This library is intended for apps that use dependency injection and Microsoft.Extensions.Options.</Description>
     <FileVersion>1.0.1.0</FileVersion>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
