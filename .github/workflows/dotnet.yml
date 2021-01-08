@@ -12,11 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: carlosperate/download-file-action@v1.0.3
-      with:
-        file-url: "https://www.antlr.org/download/antlr-4.9.1-complete.jar"
-        file-name: "antlr-4.9.1-complete.jar"
-        location: "/tools/antlr/"
+    - name: Navigate to ANTLR tools directory
+      run: cd /tools/antlr
+    - name: Download ANTLR
+      run: curl –O https://www.antlr.org/download/antlr-4.9.1-complete.jar
+    - name: Return to home
+      run: cd ../../
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
