@@ -12,12 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Navigate to ANTLR tools directory
-      run: cd /tools/antlr
-    - name: Download ANTLR
-      run: curl –O https://www.antlr.org/download/antlr-4.9.1-complete.jar
-    - name: Return to home
-      run: cd ../../
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
@@ -25,6 +19,12 @@ jobs:
         dotnet-version: 3.1.301
     - name: Restore dependencies
       run: dotnet restore
+    - name: Navigate to ANTLR tools directory
+      run: cd /tools/antlr
+    - name: Download ANTLR
+      run: curl –O https://www.antlr.org/download/antlr-4.9.1-complete.jar
+    - name: Return to home
+      run: cd ../../
     - name: Build
       run: dotnet build --no-restore
     - name: Test
