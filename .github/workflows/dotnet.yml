@@ -19,12 +19,8 @@ jobs:
         dotnet-version: 3.1.301
     - name: Restore dependencies
       run: dotnet restore
-    - name: Navigate to ANTLR tools directory
-      run: cd /tools/antlr
     - name: Download ANTLR
-      run: curl –O https://www.antlr.org/download/antlr-4.9.1-complete.jar
-    - name: Return to home
-      run: cd ../../
+      run: wget -P /home/runner/work/OptionExpressions/OptionExpressions/tools/antlr/ "https://www.antlr.org/download/antlr-4.9.1-complete.jar"
     - name: Build
       run: dotnet build --no-restore
     - name: Test
