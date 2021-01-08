@@ -21,6 +21,10 @@ jobs:
       run: dotnet restore
     - name: Download ANTLR
       run: wget -P /home/runner/work/OptionExpressions/OptionExpressions/tools/antlr/ "https://www.antlr.org/download/antlr-4.9.1-complete.jar"
+    - name: Generate lexer
+      run: java -jar /home/runner/work/OptionExpressions/OptionExpressions/tools/antlr/antlr-4.9-complete.jar -Dlanguage=CSharp "./Engine/Grammar/ExpressionLexer.g4" -o "./Engine/Generated" -package OptionExpressions.Engine.Generated
+    - name: Generate parser
+      run: java -jar /home/runner/work/OptionExpressions/OptionExpressions/tools/antlr/antlr-4.9-complete.jar -Dlanguage=CSharp "./Engine/Grammar/ExpressionParser.g4" -o "./Engine/Generated" -package OptionExpressions.Engine.Generated -visitor -no-listener
     - name: Build
       run: dotnet build --no-restore
     - name: Test
