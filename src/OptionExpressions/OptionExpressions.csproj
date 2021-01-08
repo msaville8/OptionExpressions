@@ -12,7 +12,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Description>Enable functions and variables in your app's configuration with Option Expressions.</Description>
+    <Description>Enable functions and variables in your app's configuration with Option Expressions. This library is intended for apps that use dependency injection and Microsoft.Extensions.Options.</Description>
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

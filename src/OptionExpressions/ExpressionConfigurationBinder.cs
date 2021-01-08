@@ -10,7 +10,7 @@ namespace OptionExpressions
     // This class was adapted from Microsoft.Extensions.Configuration.Binder source code which is licensed under the MIT License.
     // https://github.com/dotnet/runtime/blob/35d70817611f53a5c1ecda5c93eaf969a30ca667/src/libraries/Microsoft.Extensions.Configuration.Binder/src/ConfigurationBinder.cs#L484
 
-    internal sealed class ExpressionConfigurationBinder
+    public sealed class ExpressionConfigurationBinder
     {
         private const BindingFlags DeclaredOnlyLookup = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
 
